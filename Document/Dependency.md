@@ -1,7 +1,6 @@
 Dev Environment
 - DotNet8
 - NodeJS for npm
-- Vue cli for create project
 - postgresql
 
 Client
@@ -18,7 +17,7 @@ Server
 Database
 - postgresql
 
-VsCode Plug-in
+VsCode Plugin
 - C#
 - vue
 - Prettier
