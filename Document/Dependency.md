@@ -1,5 +1,5 @@
 Dev Environment
-- Dotnet8
+- DotNet8
 - NodeJS for npm
 - Vue cli for create project
 - postgresql
@@ -13,7 +13,7 @@ Client
 - vue3-google-map
 
 Server
-- Dotnet8 webApi
+- DotNet8 WebApi
 
 Database
 - postgresql
@@ -21,7 +21,7 @@ Database
 VsCode Plug-in
 - C#
 - vue
-- prettier
-- SQL fomat
+- Prettier
+- SQLTools
 - markdown
 - Github copilot
