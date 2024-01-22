@@ -1,0 +1,6 @@
+@QrOrderOwnerApi_HostAddress = http://localhost:5095
+
+GET {{QrOrderOwnerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
