@@ -1,25 +1,34 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+
+import Register from "../views/Register.vue";
+import Order from "../views/Order.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "Register",
+    component: Register,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: "/order",
+    name: "Order",
+    component: Order,
+  },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+router.beforeEach(async (to, from) => {
+  if (to.name == "Order") {
+    //TODO check if customer is registered
+    // const isRegistered = false;
+    // if (!isRegistered) {
+    //   return { name: "Register" };
+    // }
+  }
+});
+
+export default router;

@@ -4,9 +4,11 @@ Dev Environment
 - postgresql
 
 Client
-- vue
+- vue3
 - vue-router
 - vue-i18n
+- bootstrap 5.3.2
+- bootstrap-icons
 - axios
 - cropperjs
 - vue3-google-map
@@ -21,6 +23,7 @@ VsCode Plugin
 - C#
 - vue
 - Prettier
+  - Bracket same line = true
 - SQLTools
 - markdown
 - Github copilot

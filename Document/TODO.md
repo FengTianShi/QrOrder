@@ -4,6 +4,8 @@
     - Client `vue cli` or `vue ui`
 - [x] Add .gitignore
 - [ ] Page Design
+- [ ] Change vue project launch port
+- [ ] Test project in another environment
 
 
 - [ ] Use imgBB as image server
