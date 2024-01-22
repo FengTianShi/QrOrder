@@ -1,0 +1,6 @@
+    "cropperjs": "^1.6.1",
+    "vue": "^3.2.26",
+    "vue-i18n": "^9.7.1",
+    "vue-router": "^4.2.5",
+    "vue3-google-map": "^0.18.0",
+    "axios": "^1.6.1",
