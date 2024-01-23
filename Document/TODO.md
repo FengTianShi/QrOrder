@@ -7,5 +7,4 @@
 - [ ] Change vue project launch port
 - [ ] Test project in another environment
 
-
 - [ ] Use imgBB as image server
