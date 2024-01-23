@@ -25,5 +25,6 @@ VsCode Plugin
 - Prettier
   - Bracket same line = true
 - SQLTools
+- pgFormatter
 - markdown
 - Github copilot
