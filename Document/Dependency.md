@@ -1,7 +1,7 @@
-Dev Environment
-- DotNet8
-- NodeJS for npm
-- postgresql
+Environment
+- .Net8
+- Nodejs for npm
+- PostgreSQL
 
 Client
 - vue3
@@ -12,19 +12,19 @@ Client
 - axios
 - cropperjs
 - vue3-google-map
+- font
 
 Server
-- DotNet8 WebApi
+- .Net8 WebApi
 
 Database
-- postgresql
+- PostgreSQL
 
 VsCode Plugin
 - C#
 - vue
 - Prettier
-  - Bracket same line = true
+  - Set Bracket same line = true
 - SQLTools
-- pgFormatter
 - markdown
 - Github copilot

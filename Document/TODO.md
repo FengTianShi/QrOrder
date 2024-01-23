@@ -1,13 +1,13 @@
-- [x] Create Logo 
+- [x] Create logo 
 - [x] Create project
     - Server `dotnet new webapi --use-controllers -o ProjectName`
     - Client `vue cli` or `vue ui`
 - [x] Add .gitignore
 - [x] Change vue project launch port
 - [ ] Page font
-- [ ] Test project in another environment
+- [ ] Test another environment
 
-- [ ] Page Design
-- [ ] Database Design
+- [ ] Page design
+- [ ] Database design
 
 - [ ] Use imgBB as image server
