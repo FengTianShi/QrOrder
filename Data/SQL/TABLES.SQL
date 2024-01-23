@@ -1,4 +1,3 @@
-CREATE DATABASE IF NOT EXISTS qrorder;
 DROP TABLE IF EXISTS t_owner;
 CREATE TABLE t_owner(
     owner_id serial PRIMARY KEY,
