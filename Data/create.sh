@@ -1,1 +1,1 @@
-psql -U postgres -d postgres -a -f ./create.SQL
+sudo -u postgres psql -U postgres -d postgres -a -f ./create.SQL
