@@ -1,0 +1,1 @@
+- `dotnet watch --urls http://localhost:8081`
