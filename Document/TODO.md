@@ -4,6 +4,7 @@
     - Client `vue cli` or `vue ui`
 - [x] Add .gitignore
 - [x] Change vue project launch port
+- [ ] Page font
 - [ ] Test project in another environment
 
 - [ ] Page Design
