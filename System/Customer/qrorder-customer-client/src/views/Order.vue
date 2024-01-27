@@ -1,7 +1,7 @@
 <template>
   <div id="layout">
     <div id="header">
-      <Header />
+      <MainHeader />
     </div>
 
     <div id="content">
@@ -9,18 +9,85 @@
         <FoodMenu />
       </div>
 
-      <div id="main">
-        <div class="d-flex flex-wrap justify-content-center">
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
-          <FoodCard />
+      <div id="main" class="container-fluid">
+        <div class="row">
+          <div class="col px-1 pt-0 pb-0">
+            <p class="h5">お寿司</p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col px-1 pt-4 pb-0">
+            <p class="h5">おつまみ</p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
+          <div class="col p-1">
+            <FoodCard class="" />
+          </div>
         </div>
       </div>
 
@@ -30,7 +97,7 @@
             type="button"
             class="btn btn-danger rounded-pill m-2"
             data-bs-toggle="modal"
-            data-bs-target="#cart">
+            data-bs-target="#cartModal">
             <i class="bi bi-cart4 me-1" style="font-size: 18px" />
             <span class="me-1">カート</span>
             <span class="badge bg-warning border border-light rounded-circle">
@@ -42,23 +109,28 @@
     </div>
   </div>
 
-  <Food />
-  <Cart />
-  <Restaurant />
+  <FoodModal />
+  <CartModal />
+  <RestaurantModal />
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-
+import MainHeader from "@/components/MainHeader.vue";
 import FoodMenu from "@/components/FoodMenu.vue";
 import FoodCard from "@/components/FoodCard.vue";
-
-import Food from "@/components/Food.vue";
-import Cart from "@/components/Cart.vue";
-import Restaurant from "@/components/Restaurant.vue";
+import FoodModal from "@/components/FoodModal.vue";
+import CartModal from "@/components/CartModal.vue";
+import RestaurantModal from "@/components/RestaurantModal.vue";
 
 export default {
-  components: { Header, FoodMenu, FoodCard, Food, Cart, Restaurant },
+  components: {
+    MainHeader,
+    FoodMenu,
+    FoodCard,
+    FoodModal,
+    CartModal,
+    RestaurantModal,
+  },
 };
 </script>
 
@@ -85,7 +157,7 @@ body {
   height: 100%;
   float: left;
   display: flex;
-  padding-bottom: 120px;
+  padding-bottom: 114px;
 }
 
 #side {

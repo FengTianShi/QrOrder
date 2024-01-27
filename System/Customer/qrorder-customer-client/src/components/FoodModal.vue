@@ -1,21 +1,11 @@
 <template>
-  <div class="modal fade" id="foodDetailModal" tabindex="-1">
+  <div class="modal fade" id="foodModal" tabindex="-1">
     <div
       class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down"
-      style="max-width: 600px">
+      style="max-width: 700px">
       <div class="modal-content">
-        <div class="modal-header p-0 pe-4">
-          <nav class="navbar">
-            <div class="container-fluid">
-              <Brand />
-            </div>
-          </nav>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close" />
-        </div>
+        <ModalHeader />
+
         <div class="modal-body p-0">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYm2LKmGDspWPFpuf2cSqBAvQiW4LTcHAPaw&usqp=CAU"
@@ -29,7 +19,7 @@
 
             <p class="card-text fs-5 mb-2">
               <strong>
-                <span class="text-danger">$ 2,099</span>
+                <span class="text-danger me-1">$ 2,099</span>
                 <small class="text-secondary">税込み</small>
               </strong>
             </p>
@@ -50,8 +40,10 @@
                 name="flexRadioDefault"
                 id="flexRadioDefault1" />
               <label class="form-check-label d-flex" for="flexRadioDefault1">
-                <span class="flex-grow-1">小辛さ</span>
-                <span>+ $0.50</span>
+                <span class="flex-grow-1">
+                  小辛さ小辛さ小辛さ小辛さ小辛さ小辛さ小辛さ小辛さ小辛さ小辛さ
+                </span>
+                <span>+$0.50</span>
               </label>
             </div>
             <div class="form-check py-2">
@@ -63,7 +55,7 @@
                 checked />
               <label class="form-check-label d-flex" for="flexRadioDefault2">
                 <span class="flex-grow-1">中辛さ</span>
-                <span>+ $0.50</span>
+                <span>+$0.50</span>
               </label>
             </div>
           </div>
@@ -80,7 +72,7 @@
                 id="flexCheckDefault" />
               <label class="form-check-label d-flex" for="flexCheckDefault">
                 <span class="flex-grow-1">ビーフ</span>
-                <span>+ $0.50</span>
+                <span>+$0.50</span>
               </label>
             </div>
             <div class="form-check py-2">
@@ -92,7 +84,7 @@
                 checked />
               <label class="form-check-label d-flex" for="flexCheckChecked">
                 <span class="flex-grow-1">ラーム肉</span>
-                <span>+ $0.80</span>
+                <span>+$0.80</span>
               </label>
             </div>
           </div>
@@ -108,15 +100,11 @@
           </div>
 
           <p class="card-text text-end p-4">
-            <button
-              type="button"
-              class="btn btn-sm border-1 border-secondary rounded-circle">
+            <button type="button" class="btn btn-sm btn-light rounded-circle">
               <i class="bi bi-dash-lg" />
             </button>
-            <span class="text-secondary mt-1 px-2" style="width: 20px">1</span>
-            <button
-              type="button"
-              class="btn btn-sm border-1 border-warning rounded-circle">
+            <span class="text-secondary mt-1 px-2" style="width: 18px">0</span>
+            <button type="button" class="btn btn-sm btn-light rounded-circle">
               <i class="bi bi-plus-lg" />
             </button>
           </p>
@@ -134,10 +122,10 @@
 </template>
 
 <script>
-import Brand from "@/components/Brand.vue";
+import ModalHeader from "@/components/ModalHeader.vue";
 
 export default {
-  components: { Brand },
+  components: { ModalHeader },
 };
 </script>
 

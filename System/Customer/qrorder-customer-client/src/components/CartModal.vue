@@ -1,21 +1,11 @@
 <template>
-  <div class="modal fade" id="cart" tabindex="-1">
+  <div class="modal fade" id="cartModal" tabindex="-1">
     <div
       class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down"
-      style="max-width: 600px">
+      style="max-width: 700px">
       <div class="modal-content">
-        <div class="modal-header p-0 pe-4">
-          <nav class="navbar">
-            <div class="container-fluid">
-              <Brand />
-            </div>
-          </nav>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close" />
-        </div>
+        <ModalHeader />
+
         <div class="modal-body p-0">
           <h1 class="text-center p-4">Cart</h1>
         </div>
@@ -32,10 +22,10 @@
 </template>
 
 <script>
-import Brand from "@/components/Brand.vue";
+import ModalHeader from "@/components/ModalHeader.vue";
 
 export default {
-  components: { Brand },
+  components: { ModalHeader },
 };
 </script>
 

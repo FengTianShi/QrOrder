@@ -10,7 +10,7 @@ Client
 - bootstrap 5.3.2
 - bootstrap-icons
 - axios
-- cropperjs
+- cropper.js
 - vue3-google-map
 - font
 
@@ -24,7 +24,8 @@ VsCode Plugin
 - C#
 - vue
 - Prettier
-  - Set Bracket same line = true
+  - Bracket same line = true
 - SQLTools
-- markdown
+- Markdown
 - Github copilot
+- Code Spell Checker
