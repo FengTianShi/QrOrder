@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using QrOrderCustomerApi.Models;
+using QrOrderCustomerApi.Entities;
 
 namespace QrOrderCustomerApi.Data
 {
-    public class QrOrderDbContext(DbContextOptions<QrOrderDbContext> options) : DbContext(options)
+    public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
     {
         public DbSet<Restaurant> Restaurants { get; set; }
     }

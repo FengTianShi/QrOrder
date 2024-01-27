@@ -1,15 +1,19 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using NpgsqlTypes;
 
-namespace QrOrderCustomerApi.Models
+namespace QrOrderCustomerApi.Entities
 {
     [Table("t_restaurant")]
     public class Restaurant
     {
+        [Column("restaurant_id")]
         public long RestaurantId { get; set; }
+
         // public long OwnerId { get; set; }
         // public long CurrencyId { get; set; }
-        public string? RestaurantTel { get; set; }
+
+        [Column("restaurant_tel")]
+        public string RestaurantTel { get; set; } = string.Empty;
+
         // public string? RestaurantPostalCode { get; set; }
         // public NpgsqlPoint RestaurantLongitude { get; set; }
         // public NpgsqlPoint RestaurantLatitude { get; set; }

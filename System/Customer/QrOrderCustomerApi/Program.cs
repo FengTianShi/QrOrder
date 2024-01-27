@@ -11,8 +11,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Database connection
-builder.Services.AddEntityFrameworkNpgsql().AddDbContext<QrOrderDbContext>(opt =>
-    opt.UseNpgsql(builder.Configuration.GetConnectionString("QrOrderDbContext")));
+builder.Services.AddDbContext<DataContext>(opt =>
+{
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("QrOrderConnection"));
+});
 
 var app = builder.Build();
 

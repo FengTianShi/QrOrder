@@ -1,12 +1,12 @@
 #!/bin/bash
 
-uuid=$(uuidgen)
+work=$(uuidgen)
 
-sudo mkdir /$uuid
-sudo cp -r ./SQL/* /$uuid
-sudo chown -R postgres:postgres /$uuid
+sudo mkdir /$work
+sudo cp -r ./SQL/* /$work
+sudo chown -R postgres:postgres /$work
 
-sudo -u postgres psql -U postgres -d postgres -c "\i /$uuid/DB.SQL"
-sudo -u postgres psql -U postgres -d qrorder -c "\i /$uuid/TABLE.SQL"
+sudo -u postgres psql -U postgres -d postgres -c "\i /$work/database.sql"
+sudo -u postgres psql -U postgres -d qrorder -c "\i /$work/restaurant.sql"
 
-sudo rm -rf /$uuid
+sudo rm -rf /$work
